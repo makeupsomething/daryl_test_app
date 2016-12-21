@@ -1,8 +1,5 @@
 import time
-import sys
-#sys.path.append("/usr/local/lib/python2.7/site-packages/")
 import requests
-import json
 from pprint import pprint
 
 while True:
@@ -11,6 +8,6 @@ while True:
 	place = data["name"]
 	curWeather = data["weather"][0]["main"]
 	curTemp = int(data["main"]["temp"]) - 273.15
-	print 'The current weather in {0} is {1} and the tempature is {2} celsius'.format(place, curWeather, curTemp)
-
-	time.sleep(500)
+	display = 'The current weather in {0} is {1} and the tempature is {2} celsius'.format(place, curWeather, curTemp)
+	pprint(display)
+	time.sleep(30)
