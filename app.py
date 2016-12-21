@@ -11,4 +11,4 @@ while True:
 	curTemp = int(data["main"]["temp"]) - 273.15
 	display = 'The current weather in {0},{3} is {1} and the tempature is {2} celsius'.format(place, curWeather, curTemp, country)
 	pprint(display)
-	time.sleep(30)
+	time.sleep(20)
