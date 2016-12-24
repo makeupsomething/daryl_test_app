@@ -13,5 +13,5 @@ while True:
 		display = 'The current weather in {0},{3} is {1} and the tempature is {2} celsius'.format(place, curWeather, curTemp, country)
 		pprint(display)
 	except Exception as ex1:
-		print 'WEATHER DATA ERORR! ' + ex1
+		print 'WEATHER DATA ERORR! ' + str(ex1)
 	time.sleep(20)
