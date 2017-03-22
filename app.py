@@ -10,7 +10,7 @@ while True:
 		country = data['sys']['country']
 		curWeather = data["weather"][0]["main"]
 		curTemp = int(data["main"]["temp"]) - 273.15
-		display = 'The current weather in {0},{3} is {1} and the tempature is {2} celsius. Have a nice day.'.format(place, curWeather, curTemp, country)
+		display = 'The current weather in {0},{3} is {1} and the tempature is {2} celsius.'.format(place, curWeather, curTemp, country)
 		pprint(display)
 		#pprint("daryl test)
 	except Exception as ex1:
