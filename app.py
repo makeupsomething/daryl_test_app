@@ -15,4 +15,4 @@ while True:
 		#pprint("daryl test)
 	except Exception as ex1:
 		print 'WEATHER DATA ERORR! ' + str(ex1)
-	time.sleep(10)
+	time.sleep(3000)
