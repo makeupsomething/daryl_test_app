@@ -15,6 +15,7 @@ while True:
 		nowString = now.strftime("%I:%M%p on %B %d, %Y")
 		display = 'The current weather at {4} in {0},{3} is {1} and the tempature is {2} celsius'.format(place, curWeather, curTemp, country, nowString)
 		pprint(display)
+		#pprint("daryl test)
 	except Exception as ex1:
 		print 'WEATHER DATA ERORR! ' + str(ex1)
-	time.sleep(450)
+	time.sleep(3000)
