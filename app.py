@@ -1,5 +1,6 @@
 import time
 import requests
+import datetime
 from pprint import pprint
 
 while True:
@@ -10,7 +11,9 @@ while True:
 		country = data['sys']['country']
 		curWeather = data["weather"][0]["main"]
 		curTemp = int(data["main"]["temp"]) - 273.15
-		display = 'The current weather in {0},{3} is {1} and the tempature is {2} celsius'.format(place, curWeather, curTemp, country)
+		now = datetime.datetime.now()
+		nowString = now.strftime("%I:%M%p on %B %d, %Y")
+		display = 'The current weather at {4} in {0},{3} is {1} and the tempature is {2} celsius'.format(place, curWeather, curTemp, country, nowString)
 		pprint(display)
 	except Exception as ex1:
 		print 'WEATHER DATA ERORR! ' + str(ex1)
