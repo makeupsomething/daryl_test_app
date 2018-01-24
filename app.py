@@ -1,4 +1,4 @@
-import tdfdime
+import time
 import requests
 import datetime
 from pprint import pprint
