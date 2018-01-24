@@ -1,4 +1,4 @@
-import time
+import tdfdime
 import requests
 import datetime
 from pprint import pprint
@@ -18,4 +18,4 @@ while True:
 		#pprint("daryl test)
 	except Exception as ex1:
 		print 'WEATHER DATA ERORR! ' + str(ex1)
-	time.sleep(1500)
+	time.sleep(1501)
