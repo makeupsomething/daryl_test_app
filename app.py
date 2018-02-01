@@ -13,7 +13,7 @@ while True:
 		curTemp = int(data["main"]["temp"]) - 273.15
 		now = datetime.datetime.now()
 		nowString = now.strftime("%I:%M%p on %B %d, %Y %s")
-		display = 'TEST The current weather at {4} in {0},{3} is {1} and the tempature is {2} celsius'.format(place, curWeather, curTemp, country, nowString)
+		display = 'TEST_2 The current weather at {4} in {0},{3} is {1} and the tempature is {2} celsius'.format(place, curWeather, curTemp, country, nowString)
 		pprint(display)
 		#pprint("daryl test)
 	except Exception as ex1:
