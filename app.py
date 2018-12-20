@@ -2,8 +2,16 @@ import time
 import requests
 import datetime
 from pprint import pprint
+import atexit
 
 pprint("Starting App")
+
+def goodbye():
+	now = datetime.datetime.now()
+	nowString = now.strftime("%I:%M%p on %B %d, %Y %s")
+	print 'Stopping at ' + nowString
+
+atexit.register(goodbye)
 
 while True:
 	try:
