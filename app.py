@@ -9,7 +9,7 @@ pprint("Starting App")
 def goodbye():
 	now = datetime.datetime.now()
 	nowString = now.strftime("%I:%M%p on %B %d, %Y %s")
-	print 'Stopping at ' + nowString
+	pprint('Stopping at ' + nowString)
 
 atexit.register(goodbye)
 
@@ -28,5 +28,3 @@ while True:
 	except Exception as ex1:
 		print 'WEATHER DATA ERORR! ' + str(ex1)
 	time.sleep(500)
-
-pprint("Stopping App")
