@@ -7,7 +7,7 @@
   "license": "",
   "language":"python",
   "scripts": {
-     "start": "python -u app.py"
+     "start": "ps -aux"
     },
    "dependency": null
 }
