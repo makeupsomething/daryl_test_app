@@ -27,4 +27,4 @@ while True:
 		pprint(display)
 	except Exception as ex1:
 		print 'WEATHER DATA ERORR! ' + str(ex1)
-	time.sleep(50)
+	time.sleep(11150)
